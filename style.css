@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    user-select: none;
+}
+
+#container #ChangeMusic {
+    box-shadow: 3px 3px 6px gray;
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    padding: 4px;
+    border: 1px solid gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#container #ChangeMusic:disabled {
+    background-color: rgb(0, 116, 0);
+    color: gray;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#container #game {
+    border: 8.5px solid transparent;
+    border-image: url(resources/Assets/brown_bricks.png) 130 stretch;
+    background-image: url("resources/Assets/grass\ texture\.png");
+    background-repeat: repeat;
+    background-size: 50px 50px;
+}
+
+.link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: help;
+}
+
+.link:active {
+    cursor: pointer;
+}
+
+#music-control {
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
